@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>DNS</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand navbar-light bg-dark p-3">
@@ -18,7 +20,7 @@
             </a>
 
             <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./ip.html">
-                IP Addresses, Packets and Routing 
+                IP Addresses, Packets and Routing
             </a>
 
             <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./dns.html">
@@ -26,20 +28,106 @@
             </a>
 
             <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./http.html">
-                HTTP and HTTPs Protocols 
+                HTTP and HTTPs Protocols
             </a>
 
             <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./w3c.html">
-                W3C and HTML and CSS 
+                W3C and HTML and CSS
             </a>
 
             <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./about.html">
-                About 
+                About
             </a>
         </div>
     </nav>
-    
-    
+
+    <div class="jumbotron">
+        <h1 class="display-3">DNS</h1>
+        <hr class="my-2">
+    </div>
+
+
+    <!-- Introduction -->
+    <div class="container-fluid">
+        <h1>Introduction</h1>
+        <hr>
+        <div class="container-fluid">
+
+            <p>
+
+                The Domain Name System (DNS) protocol is an important part of the web's infrastructure, serving as the
+                Internet's phone book: every time you visit a website, your computer performs a DNS lookup. Complex
+                pages often require multiple DNS lookups before they start loading, so your computer may be performing
+                hundreds of lookups a day.
+            </p>
+            <hr>
+        </div>
+
+    </div>
+
+    <!-- Examples -->
+    <div class="container-fluid">
+
+        <h1>Examples</h1>
+        <br>
+        <p>
+            The process of DNS resolution involves converting a hostname (such as www.example.com) into a
+            computer-friendly IP address (such as 192.168.1.1). An IP address is given to each device on the Internet,
+            and that address is necessary to find the appropriate Internet device - like a street address is used to
+            find a particular home. When a user wants to load a webpage, a translation must occur between what a user
+            types into their web browser (example.com) and the machine-friendly address necessary to locate the
+            example.com webpage.
+        </p>
+    </div>
+
+    <div class="container-fluid">
+
+        <h1>Why do we use it?</h1>
+        <br>
+        <p>
+            The DNS directory that matches name to numbers isn’t located all in one place in some dark corner of the
+            internet. With more than 332 million domain names listed at the end of 2017, a single directory would be
+            very large indeed. Like the internet itself, the directory is distributed around the world, stored on domain
+            name servers (generally referred to as DNS servers for short) that all communicate with each other on a very
+            regular basis to provide updates and redundancies.
+            <br>
+            <hr>
+        <p class="my-4"></p>
+
+        Each domain can correspond to more than one IP address. In fact, some sites have hundreds or more IP addresses
+        that correspond with a single domain name. For example, the server your computer reaches for www.google.com is
+        likely completely different from the server that someone in another country would reach by typing the same site
+        name into their browser.
+
+        Another reason for the distributed nature of the directory is the amount of time it would take for you to get a
+        response when you were looking for a site if there was only one location for the directory, shared among the
+        millions, probably billions, of people also looking for information at the same time. That’s one long line to
+        use the phone book.
+
+        <br>
+        <p class="my-4"></p>
+
+        To get around this problem, DNS information is shared among many servers. But information for sites visited
+        recently is also cached locally on client computers. Chances are that you use google.com several times a day.
+        Instead of your computer querying the DNS name server for the IP address of google.com every time, that
+        information is saved on your computer so it doesn’t have to access a DNS server to resolve the name with its IP
+        address. Additional caching can occur on the routers used to connect clients to the internet, as well as on the
+        servers of the user’s Internet Service Provider (ISP). With so much caching going on, the number of queries that
+        actually make it to DNS name servers is a lot lower than it would seem.
+
+        <br>
+        <p class="my-4"></p>
+
+        Generally speaking, the DNS server you use will be established automatically by your network provider when you
+        connect to the internet. If you want to see which servers are your primary nameservers — generally the recursive
+        resolver, as described above — there are web utilities that can provide a host of information about your current
+        network connection. Browserleaks.com is a good one, and it provides a lot of information, including your current
+        DNS servers.
+        <br>
+        <p class="my-5"></p>
+        </p>
+    </div>
 
 </body>
+
 </html>
