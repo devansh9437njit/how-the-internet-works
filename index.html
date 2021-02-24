@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <title>Welcome</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand navbar-light bg-dark">
+<body class="background">
+    <nav class="navbar navbar-expand navbar-light bg-dark p-3">
         <div class="nav navbar-nav">
             <a class="nav-item text-light nav-link active" href="/index.html">Home</a>
             <a class="nav-item text-light nav-link active" href="#">Topic 1</a>
@@ -18,5 +18,95 @@
             <a class="nav-item text-light nav-link active" href="#">Topic 5</a>
         </div>
     </nav>
+
+    <div class="container-fluid">
+        <h1 class="display-2 text-light shadows">
+            How The Internet Works
+        </h1>
+    </div>
+
+
+
+    <div class="container-fluid">
+
+        <div class="row text-dark m-5">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1 class="card-title dispaly-2">
+                            List of discussed topics
+                        </h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-dark my-5">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Domain Names and ICANN</h5>
+                        <a href="./pages/page1.html" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">IP Addresses, Packets and Routing</h5>
+                         
+                        <a href=" ./pages/page3.html" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-dark my-5">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">DNS</h5>
+                         
+                        <a href=" ./pages/page5.html" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">HTTP and HTTPs Protocols</h5>
+                         
+                        <a href=" ./pages/page7.html" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-dark my-5">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">W3C and HTML and CSS</h5>
+                         
+                        <a href=" ./pages/page9.html" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+
+<style>
+    .background{
+        background-image: url("imgs/bg.jpg");
+        background-size: cover;
+    }
+
+    .shadows{
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+</style>
 </html>
