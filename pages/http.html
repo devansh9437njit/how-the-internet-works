@@ -6,156 +6,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTTP and HTTPs</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Domain Names and ICANN</title>
-        <link rel="stylesheet" href="../css/bootstrap.css">
-    </head>
+        
+    <nav class="navbar navbar-expand navbar-light bg-dark p-3">
+        <div class="nav navbar-nav">
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="/index.html">Home</a>
 
-    <body>
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./domain.html">
+                Domain Names and ICANN
+            </a>
 
-        <nav class="navbar navbar-expand navbar-light bg-dark p-3">
-            <div class="nav navbar-nav">
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="/index.html">Home</a>
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./ip.html">
+                IP Addresses, Packets and Routing
+            </a>
 
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./domain.html">
-                    Domain Names and ICANN
-                </a>
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./dns.html">
+                DNS
+            </a>
 
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./ip.html">
-                    IP Addresses, Packets and Routing
-                </a>
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./http.html">
+                HTTP and HTTPs Protocols
+            </a>
 
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./dns.html">
-                    DNS
-                </a>
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./w3c.html">
+                W3C and HTML and CSS
+            </a>
 
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./http.html">
-                    HTTP and HTTPs Protocols
-                </a>
-
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./w3c.html">
-                    W3C and HTML and CSS
-                </a>
-
-                <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./about.html">
-                    About
-                </a>
-            </div>
-        </nav>
-
-        <div class="jumbotron">
-            <h1 class="display-3">HTTP and HTTPs Protocols</h1>
-            <hr class="my-2">
+            <a class="btn btn-primary my-2 mx-2 nav-item text-light nav-link active" href="./about.html">
+                About
+            </a>
         </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-3">HTTP and HTTPs Protocols</h1>
+        <hr class="my-2">
+    </div>
 
 
-        <!-- Introduction -->
+    <!-- Introduction -->
+    <div class="container-fluid">
+        <h1>Introduction</h1>
+        <hr>
         <div class="container-fluid">
-            <h1>Introduction</h1>
-            <hr>
-            <div class="container-fluid">
-                <h4><strong>HTTP Protocol</strong></h4>
-                <p>
-                    HTTP is a protocol which allows the fetching of resources, such as HTML documents. It is the
-                    foundation of any data exchange on the Web and it is a client-server protocol, which means requests
-                    are initiated by the recipient, usually the Web browser. A complete document is reconstructed from
-                    the different sub-documents fetched, for instance text, layout description, images, videos, scripts,
-                    and more.
-                </p>
-
-
-                <h4><strong>HTTPS Protocol</strong></h4>
-                <p>
-                    Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary
-                    protocol used to send data between a web browser and a website. HTTPS is encrypted in order to
-                    increase security of data transfer. This is particularly important when users transmit sensitive
-                    data, such as by logging into a bank account, email service, or health insurance provider.
-                </p>
-            </div>
-
-        </div>
-
-        <!-- Examples -->
-        <div class="container-fluid">
-
-            <h1>Examples</h1>
-            <hr>
+            <h4><strong>HTTP Protocol</strong></h4>
             <p>
-                HTTPS protects the communication between your browser and server from being intercepted and tampered
-                with by attackers. This provides confidentiality, integrity and authentication to the vast majority of
-                today’s WWW traffic.
+                HTTP is a protocol which allows the fetching of resources, such as HTML documents. It is the
+                foundation of any data exchange on the Web and it is a client-server protocol, which means requests
+                are initiated by the recipient, usually the Web browser. A complete document is reconstructed from
+                the different sub-documents fetched, for instance text, layout description, images, videos, scripts,
+                and more.
+            </p>
 
-                Any website that shows a lock icon in the address bar is using HTTPS.
+
+            <h4><strong>HTTPS Protocol</strong></h4>
+            <p>
+                Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary
+                protocol used to send data between a web browser and a website. HTTPS is encrypted in order to
+                increase security of data transfer. This is particularly important when users transmit sensitive
+                data, such as by logging into a bank account, email service, or health insurance provider.
             </p>
         </div>
 
-        <div class="container-fluid">
+    </div>
 
-            <h1>Why we use these?</h1>
-            <hr>
-            <p>
-                <strong>HTTP</strong>
-                <br>
-                HTTP is the most common protocol you see on the Internet. It provides the gateway for community between
-                your computer or device, the client, and the website or online resource found on a server. Typically,
-                when you click on a result in a search engine or type a URL into your browser, you're making an HTTP
-                request. Most websites that don't need to protect information use HTTP, including news websites, blogs,
-                business sites and even advertisement pop-ups.
-                <br>
-            <p class="my-4"></p>
+    <!-- Examples -->
+    <div class="container-fluid">
 
-            <strong>HTTPS</strong>
+        <h1>Examples</h1>
+        <hr>
+        <p>
+            HTTPS protects the communication between your browser and server from being intercepted and tampered
+            with by attackers. This provides confidentiality, integrity and authentication to the vast majority of
+            today’s WWW traffic.
+
+            Any website that shows a lock icon in the address bar is using HTTPS.
+        </p>
+    </div>
+
+    <div class="container-fluid">
+
+        <h1>Why we use these?</h1>
+        <hr>
+        <p>
+            <strong>HTTP</strong>
             <br>
-
-            HTTP Secure is an extension of HTTP with an extra protocol that encrypts and protects your information.
-            This protocol requires that you authenticate yourself with the website, which helps to protect any
-            sensitive information shared between you and the Web server. Websites that use HTTPS include banks,
-            email clients and e-commerce sites. When you log in to these sites, you often see "https" in the
-            protocol portion of the URL.
+            HTTP is the most common protocol you see on the Internet. It provides the gateway for community between
+            your computer or device, the client, and the website or online resource found on a server. Typically,
+            when you click on a result in a search engine or type a URL into your browser, you're making an HTTP
+            request. Most websites that don't need to protect information use HTTP, including news websites, blogs,
+            business sites and even advertisement pop-ups.
             <br>
-            <p class="my-4"></p>
+        <p class="my-4"></p>
 
-            <strong>HTTPD</strong>
-            <br>
+        <strong>HTTPS</strong>
+        <br>
 
-            The "HTTPD" protocol represents a Web server where the "d" stands for "daemon." The daemon itself is a
-            program that waits for requests, such as for Web pages or multimedia files, and forwards them to the
-            appropriate resources. You don't see "HTTPD" in URL as you would "HTTP" or "HTTPS." If you run a website
-            using your own server, you may use a file, often named "httpd.conf" to configure and direct network
-            traffic, including where you store images and files.
-            <br>
-            <p class="my-4"></p>
+        HTTP Secure is an extension of HTTP with an extra protocol that encrypts and protects your information.
+        This protocol requires that you authenticate yourself with the website, which helps to protect any
+        sensitive information shared between you and the Web server. Websites that use HTTPS include banks,
+        email clients and e-commerce sites. When you log in to these sites, you often see "https" in the
+        protocol portion of the URL.
+        <br>
+        <p class="my-4"></p>
 
+        <strong>HTTPD</strong>
+        <br>
 
-
-            <strong>XHTTP</strong>
-            <br>
-            The Extended HTTP protocol sends requests and responses as headers, meaning they pass only information
-            relating to a Web session, including encoding, cookie data, connections, content-type, and warnings,
-            among others. Like HTTP daemons, you do not see XHTTP in a URL. Web servers use XHTTP to establish Web
-            sessions, which helps to determine which content you see, such as full websites on your computer or
-            mobile sites on your smartphone. Servers use these headers in conjunction with other types of HTTP
-            protocols.
-
-            <br>
-            <hr>
-            <p class="my-4"></p>
-        </div>
+        The "HTTPD" protocol represents a Web server where the "d" stands for "daemon." The daemon itself is a
+        program that waits for requests, such as for Web pages or multimedia files, and forwards them to the
+        appropriate resources. You don't see "HTTPD" in URL as you would "HTTP" or "HTTPS." If you run a website
+        using your own server, you may use a file, often named "httpd.conf" to configure and direct network
+        traffic, including where you store images and files.
+        <br>
+        <p class="my-4"></p>
 
 
 
-    </body>
+        <strong>XHTTP</strong>
+        <br>
+        The Extended HTTP protocol sends requests and responses as headers, meaning they pass only information
+        relating to a Web session, including encoding, cookie data, connections, content-type, and warnings,
+        among others. Like HTTP daemons, you do not see XHTTP in a URL. Web servers use XHTTP to establish Web
+        sessions, which helps to determine which content you see, such as full websites on your computer or
+        mobile sites on your smartphone. Servers use these headers in conjunction with other types of HTTP
+        protocols.
 
-    </html>
+        <br>
+        <hr>
+        <p class="my-4"></p>
+    </div>
+
+
 </body>
 
 </html>
